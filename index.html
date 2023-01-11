@@ -22,7 +22,8 @@
 </head>
 
 <body>
-
+  <div class="overlay" data-overlay></div>
+  
   <!-- newsletter that overlay the page - start -->
   <div class="modal" data-modal>
 
@@ -164,7 +165,7 @@
           </button>
 
           <button class="action-btn">
-            <ion-icon name="big-handle-outline"></ion-icon>
+            <ion-icon name="bag-handle-outline"></ion-icon>
             <span class="count">0</span>
           </button>
         </div>
@@ -485,15 +486,18 @@
 
     </div>
 
+   
+
     <!-- Left Menu that shows after click on the Bottom Menu for Mobile -->
     <nav class="mobile-navigation-menu has-scrollbar" data-mobile-menu>
+      <div  data-mobile-menu></div>
 
       <div class="menu-top">
-        <h2 class="menu-title">
-          <button class="menu-close-btn" data-mobile-menu-close-btn>
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
-        </h2>
+        <h2 class="menu-title">Menu</h2>
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <div data-mobile-menu-close-btn></div>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
       </div>
 
       <ul class="mobile-menu-category-list">
@@ -708,15 +712,20 @@
             <a href="#" class="social-link">
               <ion-icon name="logo-facebook"></ion-icon>
             </a>
-
+          </li>
+          
+          <li>
             <a href="#" class="social-link">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
+          </li>
 
+          <li>
             <a href="#" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
+
         </ul>
 
       </div>
