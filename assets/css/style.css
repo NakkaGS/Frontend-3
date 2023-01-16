@@ -1290,6 +1290,23 @@ body::-webkit-scrollbar-thumb:hover {
   z-index: 3;
 }
 
+.product-grid .showcase-badge.angle {
+  top: 8px;
+  left: -29px;
+  transform: rotate(-45deg);
+  text-transform: uppercase;
+  font-size: 11px;
+  padding: 5px 40px;
+}
+
+.product-grid .showcase-badge.black {
+  background: var(--eeria-black);
+}
+
+.product-grid .showcase-badge.pink {
+  background: var(--salmon-pink);
+}
+
 .product-grid .showcase-actions {
   position: absolute;
   top: 10px;
