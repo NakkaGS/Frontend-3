@@ -2044,6 +2044,36 @@ footer {
     min-width: 100%;
   }
 
+  .product-featured .showcase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .product-feature .showcase-content {
+    margin-top: 0;
+    min-width: calc(100%-345px)
+  }
+
+  /* Footer */
+  .footer-nav .container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 20px;
+  }
+
+  .footer-nav-list {
+    min-width: calc (33.33% - 15px);
+    width: calc (33.33% - 15px);
+    flex-grow: 1;
+  }
+
+  .footer-nav-list:not(:last-child) {
+    margin-bottom: 0;
+  }
+
 
 
 }
