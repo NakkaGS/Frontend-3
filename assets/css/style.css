@@ -223,16 +223,17 @@ body::-webkit-scrollbar-thumb:hover {
   z-index: 1;
 }
 
+.newsletter-img { display: none; }
+
 .modal-content {
   position: relative;
-  max-width: 750px;
+  max-width: 350px;
   margin: 20px;
   background: var(--white);
   border-radius: var(--border-radius-md);
   overflow: hidden;
   z-index: 2;
   animation: scaleUp 0.5s ease-in-out 5s forwards;
-  display: flex;
 }
 
 @keyframes scaleUp {
@@ -1753,26 +1754,25 @@ footer {
   color: inherit;
 }
 
+
+/* Responsive larger than 480px screen */
 @media (min-width: 480px) {
 
   :root {
-
     /* topology */
     --fs-1: 1.875rem;
-    
   }
 
   /* header */
   .header-top {
-    display: flexp;
+    display: flex;
     padding: 10px 0;
     border-bottom: 1px solid var(--cultured);
   }
 
   .header-social-container,
-  .header-top-actions {
-    display: none;
-  }
+  .header-top-actions { display: none; }
+
   
   .header-alert-news {
     color: var(--sonic-silver);
@@ -1833,4 +1833,217 @@ footer {
   }
 
   /* cta */
+  .cta-content {
+    padding: 40px;
+  }
+
+  .cta-content .discount {
+    --fs-11: 0.875rem;
+    padding: 5px 10px;
+  }
+
+  .cta-title {
+    --fs-5: 1.5rem;
+  }
+
+  .cta-text {
+    --fs-7: 1rem;
+  }
+
+  .cta-btn {
+    --fs-9: 1rem;
+  }
+
+  /* Footer */
+  .copyright {
+    --fs-8: 0.875rem;
+  }
+}
+
+/* Responsive larger than 570px screen */
+@media (min-width:570px) {
+  /* Header */
+
+  .header-top .container,
+  .header-main .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-logo {
+    margin-bottom: 0;
+  }
+
+  .header-top-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-top-actions select {
+    border: none;
+    display: block;
+    min-width: 80px;
+    padding: 5px 0;
+    font: inherit;
+    color: var(--sonic-silver);
+    font-size: var(--fs-8);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--transition-timing);
+  }
+
+  .header-top-actions select:hover {
+    color: var(--eeria-black);
+  }
+
+  .header-search-container {
+    min-width: 300px;
+  }
+
+  /* Banner */
+  .slider-item {
+    aspect-ratio: 4/2;
+  }
+
+  .banner-content {
+    background: none;
+  }
+
+  /* Category */
+
+  .category-item-container {
+    gap: 30px;
+  }
+
+  .category-item {
+    min-width: calc(50% - 15px);
+  }
+
+  /* Product */
+  .product-minimal .showcase-container {
+    min-width: 50%;
+  }
+
+  .product-featured .showcase-img {
+    max-width: 450px;
+    margin: auto;
+  }
+
+  .product-featured .countdown {
+    gap: 20px;
+  }
+
+  /* CTA */
+  .cta-container {
+    aspect-ratio: 6/5;
+  }
+
+  /* Blog */
+  .blog-container {
+    gap: 30px;
+  }
+
+  .blog-card {
+    min-width: calc(50% - 15px);
+  }
+  
+  
+
+}
+
+/* Responsive larger than 768px screen */
+@media (min-width:768px) {
+  
+  :root {
+    /* typography */
+    --fs-1: 2.375rem;
+  }
+
+  /* Base */
+  html {
+    font-size: 17px;
+  }
+
+  /* Reused style */
+  .container {
+    max-width: 750px;
+    margin: auto;
+  }
+
+  /* Modal */
+  .modal-content {
+    display: flex;
+    align-items: center;
+    max-width: 750px;
+  }
+
+  .newsletter-img {
+    display: block;
+  }
+
+  .newsletter {
+    text-align: left;
+  }
+
+  /* Header */
+  .header-main .container {
+    gap: 80px;
+  }
+
+  .header-search-container {
+    flex-grow: 1;
+  }
+
+  /* Banner */
+  .slider-item {
+    aspect-ratio: auto;
+    height: 350px;
+  }
+
+  .banner-content {
+    max-width: 380px;
+  }
+  
+  .banner-subtitle {
+    --fs-7: 1.25rem;
+  }
+
+  .banner-text {
+    --fs-7: 1.125rem;
+  }
+
+  .banner-text b {
+    --fs-2: 1.875rem;
+  }
+
+  .banner-btn {
+    --fs-11: 0.75rem;
+  }
+
+  /* Category */
+  .category-img-box {
+    padding: 20px;
+  }
+
+  /* Product Minimal */
+  .product-minimal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .product-minimal .product-showcase {
+    min-width: calc(50% - 10px);
+    width: calc(50% - 10px);
+  }
+
+  .product-minimal .showcase-container {
+    min-width: 100%;
+  }
+
+
+
 }
